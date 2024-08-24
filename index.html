@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            grid-template-rows: 1fr 5fr;
+        }
+        .dashboard {
+            background-color: lightblue;
+            grid-row: 1/-1;
+        }
+        .search {
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .top-search {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+        .bottom-search {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+        .content {
+            background-color: grey;
+            grid-column: 2;
+        }
+
+        .card {
+            outline: solid black 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <div><h1>Dashboard</h1></div>
+            <div>Home</div>
+            <div>Profile</div>
+            <div>Messages</div>
+            <div>History</div>
+            <div>Tasks</div>
+            <div>Communities</div>
+            <div>Settings</div>
+            <div>Support</div>
+            <div>Privacy</div>
+        </div>
+        <div class="search">
+            <div class="top-search">
+                <div>search icon</div>
+                <div>search bar</div>
+                <div>alert icon</div>
+                <div>profile image</div>
+                <div>user name</div>
+            </div>
+            <div class="bottom-search">
+                <div>user image</div>
+                <div>welcome message</div>
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cont1">
+                <div>Your Projects</div>
+                <div class="card">Super cool projects
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facilis, mollitia maxime, totam ullam ad vitae fugit nemo sunt provident 
+                    perferendis ipsa. Dolorum explicabo ullam 
+                    asperiores expedita possimus dolores illum consequatur?
+                    </p>
+                </div>
+                <div class="card">Super cool projects
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facilis, mollitia maxime, totam ullam ad vitae fugit nemo sunt provident 
+                    perferendis ipsa. Dolorum explicabo ullam 
+                    asperiores expedita possimus dolores illum consequatur?
+                    </p>
+                </div>
+                <div class="card">Super cool projects
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facilis, mollitia maxime, totam ullam ad vitae fugit nemo sunt provident 
+                    perferendis ipsa. Dolorum explicabo ullam 
+                    asperiores expedita possimus dolores illum consequatur?
+                    </p>
+                </div>
+            </div>
+            <div class="cont2">
+                <div class="card">Super cool projects
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facilis, mollitia maxime, totam ullam ad vitae fugit nemo sunt provident 
+                    perferendis ipsa. Dolorum explicabo ullam 
+                    asperiores expedita possimus dolores illum consequatur?
+                    </p>
+                </div>
+                <div class="card">Super cool projects
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facilis, mollitia maxime, totam ullam ad vitae fugit nemo sunt provident 
+                    perferendis ipsa. Dolorum explicabo ullam 
+                    asperiores expedita possimus dolores illum consequatur?
+                    </p>
+                </div>
+                <div class="card">Super cool projects
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facilis, mollitia maxime, totam ullam ad vitae fugit nemo sunt provident 
+                    perferendis ipsa. Dolorum explicabo ullam 
+                    asperiores expedita possimus dolores illum consequatur?
+                    </p>
+                </div>
+            </div>
+            <div class="cont3"></div>
+        </div> 
+</body>
+</html>
