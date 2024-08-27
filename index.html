@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .container {
             display: grid;
             grid-template-columns: 1fr 8fr;
@@ -13,6 +18,8 @@
         .dashboard {
             background-color: lightblue;
             grid-row: 1/-1;
+            display: grid;
+            grid-template-rows: 2fr repeat(9, 3rem);
         }
         .search {
             background-color: antiquewhite;
@@ -30,27 +37,41 @@
         .content {
             background-color: grey;
             grid-column: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         .card {
             outline: solid black 2px;
         }
 
+        .cont3{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .dashboard div {
+            display: grid;
+            grid-template-columns: 3rem 1fr;
+            align-items: center;
+        }
+    
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="dashboard">
-            <div><h1>Dashboard</h1></div>
-            <div>Home</div>
-            <div>Profile</div>
-            <div>Messages</div>
-            <div>History</div>
-            <div>Tasks</div>
-            <div>Communities</div>
-            <div>Settings</div>
-            <div>Support</div>
-            <div>Privacy</div>
+            <div><img src="icons/view-dashboard.svg"><h2>Dashboard</h2></div>
+            <div><img src="icons/home.svg"><p>Home</p></div>
+            <div><img src="icons/card-account.svg">Account</div>
+            <div><img src="icons/message-reply.svg">Messages</div>
+            <div><img src="icons/clock-time-three.svg">History</div>
+            <div><img src="icons/file-multiple.svg">Tasks</div>
+            <div><img src="icons/account-group.svg">Communities</div>
+            <div><img src="icons/cog.svg">Settings</div>
+            <div><img src="icons/help-box.svg">Support</div>
+            <div><img src="icons/shield-check.svg">Privacy</div>
         </div>
         <div class="search">
             <div class="top-search">
@@ -116,7 +137,21 @@
                     </p>
                 </div>
             </div>
-            <div class="cont3"></div>
+            <div class="cont3">
+                <div>Announcements</div>
+                <div class="announce-card">
+                    <div>Site Maintentance</div>
+                    <div>Community Share Day</div>
+                    <div> Updated Privacy Policy</div>
+                </div>
+                <div>Trending</div>
+                <div class="trend-card">
+                    <div>Profile</div>
+                    <div>Profile</div>
+                    <div>Profile</div>
+                    <div>Profile</div>
+                </div>
+            </div>
         </div> 
 </body>
 </html>
